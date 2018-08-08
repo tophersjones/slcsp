@@ -5,7 +5,8 @@ import GetZipData from './GetZipData'
 /* 
   this.state.zips =
 [
-  {id: 1, zipcode: "67118", rate: null},
+  {id: 1, zipcode: "64148", rate: null},
+  {id: 2, zipcode: "67118", rate: null},
   etc...
 ]
 */
