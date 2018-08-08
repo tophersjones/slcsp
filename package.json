@@ -1,7 +1,7 @@
 {
-  "name": "boilermaker",
+  "name": "slcsp",
   "version": "1.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "Finds second lowest cost silver plans by zipcode",
   "engines": {
     "node": ">= 7.0.0"
   },
@@ -9,18 +9,10 @@
   "scripts": {
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
-    "deploy": "script/deploy",
-    "lint": "eslint ./ --ignore-path .gitignore",
-    "lint-fix": "npm run lint -- --fix",
-    "precommit": "# lint-staged # un-comment to enable",
-    "prepare": "if [ -d .git ]; then npm-merge-driver install; fi",
-    "prettify": "prettier --write \"**/*.{js,jsx,json,css,scss,md}\"",
-    "postinstall": "touch secrets.js",
     "seed": "node script/seed.js",
     "start": "node server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & npm run start-server",
-    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
-    "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --require @babel/polyfill --require @babel/register"
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -33,7 +25,7 @@
       "git add"
     ]
   },
-  "author": "Fullstack Academy of Code",
+  "author": "_",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
@@ -56,7 +48,7 @@
     "redux-logger": "^2.8.1",
     "redux-thunk": "^2.3.0",
     "sequelize": "^4.38.0",
-    "socket.io": "^2.1.1"
+    "volleyball": "^1.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.55",

@@ -1,6 +1,11 @@
 const db = require('./db')
+const Plans = require('./Plans')
+const Slcsp = require('./Slcsp')
+const Zips = require('./Zips')
 
-// register models
-require('./models')
-
-module.exports = db
+module.exports = {
+  db,
+  Plans,
+  Slcsp,
+  Zips
+}
